@@ -1,0 +1,41 @@
+{
+  "name": "pattern-templates",
+  "version": "1.0.0",
+  "description": "Focused TypeScript examples for the assigned design-pattern exercises",
+  "type": "module",
+  "scripts": {
+    "demo:factory": "tsx src/creational/abstractfactory/main.ts",
+    "demo:builder": "tsx src/creational/builder/main.ts",
+    "demo:builder-http": "tsx src/creational/builder_http/main.ts",
+    "demo:prototype:doc": "tsx src/creational/prototype/document/main.ts",
+    "demo:prototype:game": "tsx src/creational/prototype/game/game-runner.ts",
+    "demo:singleton": "tsx src/creational/singleton/main.ts",
+    "demo:adapter:email": "tsx src/structural/adapter/with_email/main.ts",
+    "demo:bridge:game": "tsx src/structural/bridge/game/main.ts",
+    "demo:composite": "tsx src/structural/composite/main.ts",
+    "demo:all": "npm run demo:factory && npm run demo:builder && npm run demo:prototype:doc && npm run demo:prototype:game && npm run demo:singleton && npm run demo:adapter:email && npm run demo:bridge:game && npm run demo:composite",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "keywords": [
+    "design-patterns",
+    "typescript",
+    "gang-of-four",
+    "creational-patterns",
+    "structural-patterns",
+    "abstract-factory",
+    "builder",
+    "prototype",
+    "singleton",
+    "adapter",
+    "bridge",
+    "composite"
+  ],
+  "author": "Shohnazar Abdusalomov",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.2"
+  }
+}
